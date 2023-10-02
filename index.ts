@@ -30,7 +30,7 @@ const initServer = async () => {
 
   app.use(
     cors({
-      origin: ['*', 'http://localhost:5173'],
+      origin: ['http://localhost:5173', 'https://staging.w3wall.com', 'https://w3wall.com'],
       methods: 'GET,POST,PATCH,DELETE',
     })
   );
